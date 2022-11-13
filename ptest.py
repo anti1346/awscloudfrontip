@@ -18,8 +18,12 @@ for ip in cloudfront_ipaddress:
         print(x, file = sourceFile)
 sourceFile.close()
 
-cloudfrontip = os.system("cat cloudfrontiplist.txt")
-dnsip = os.system("cat iplist.txt")
+# cloudfrontip = os.system("cat cloudfrontiplist.txt")
+# dnsip = os.system("cat iplist.txt")
+
+file = open("cloudfrontiplist.txt")
+print(file.read())
+
 
 # f = open("cloudfrontiplist.txt", 'r')
 # line = f.readline()
